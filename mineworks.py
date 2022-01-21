@@ -69,15 +69,14 @@ while run==1:
             ld_bar()
             sleep(0.1)
             dStr(" Loading save failed !",55,97,'red',dark)
-        run=2
     elif k(EXE):
         anim("[EXE]:NEW GAME",90,198,purple,dark,3)
         money,pickaxe,item,rebirth=0,1,[0,0,0,0,0,0,0,0],0
         fRect(0,0,320,222,dark)
         ld_bar();sleep(0.1)
         dStr("Good Game !",106,101,'green',dark)
-        run=2
 
+run=2
 sleep(2)
 fRect(0,0,320,222,dark)
 
