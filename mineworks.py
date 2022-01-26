@@ -69,17 +69,14 @@ while run==1:
             ld_bar()
             sleep(0.1)
             dStr(" Loading save failed !",55,97,'red',dark)
-        run=2
     elif k(EXE):
         anim("[EXE]:NEW GAME",90,198,purple,dark,3)
         money,pickaxe,item,rebirth=0,1,[0,0,0,0,0,0,0,0],0
         fRect(0,0,320,222,dark)
         ld_bar();sleep(0.1)
         dStr("Good Game !",106,101,'green',dark)
-        run=2
-
-sleep(2)
-fRect(0,0,320,222,dark)
+		
+run=2;sleep(2);fRect(0,0,320,222,dark)
 
 while run==2:
     if load=="menu":
@@ -243,8 +240,7 @@ while run==2:
         dStr(" [1]:Rebirth\n\n\n\n\n\n\n\n [9]:Return",0,30,gray,dark)
         load="r_rebirth"
     if load=="r_rebirth":
-        if k(k1):
-            anim(" [1]:Rebirth",0,30)
+        if k(k1):anim(" [1]:Rebirth",0,30);
             if item[7]>=10000:
                 ld_bar(0.5,210,180)
                 money,pickaxe,item=0,1,[0,0,0,0,0,0,0,0];rebirth+=1
@@ -257,10 +253,6 @@ while run==2:
 
     if k(EXE):
         anim("[EXE]:Save and Exit",60,200,light,dark,3)
-        saving()
-        fRect(0,0,320,222,dark)
-        ld_bar()
-        sleep(0.2)
-        dStr("CLICK ON [OK]",94,100,'white',dark)
-        dStr("Your progress has been saved ",18,120,'green',dark)
-        run=3
+        saving();fRect(0,0,320,222,dark)
+        ld_bar();sleep(0.2)
+        dStr("CLICK ON [OK]",94,100,'white',dark);dStr("Your progress has been saved ",18,120,'green',dark);run=3
