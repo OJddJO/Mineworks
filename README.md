@@ -1,8 +1,7 @@
 # Mineworks
-Mineworks
 
-An Idle Game for the Numworks calculator
+*An Idle Game for the Numworks calculator*
 
-Written by OJddJO
+Codded by OJddJO
 
 Based on Minecraft
